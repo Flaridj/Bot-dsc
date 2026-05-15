@@ -1,0 +1,42 @@
+body {
+  background: black;
+  color: white;
+  font-family: monospace;
+}
+
+.top {
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+}
+
+#word {
+  text-align:center;
+  font-size:40px;
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; transform: translateX(2px); }
+  100% { opacity: 1; }
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:5px;
+  margin:20px;
+}
+
+.grid div {
+  border:1px solid white;
+  padding:10px;
+  text-align:center;
+}
+
+.box {
+  margin:10px;
+  padding:10px;
+  border:1px solid white;
+}
