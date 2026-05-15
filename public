@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TikTok Bingo Live</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top">
+  <h1>🎮 TikTok Bingo - niims5</h1>
+  <div id="stats">👁 0</div>
+</div>
+
+<h2 id="word">En attente...</h2>
+
+<div class="grid" id="grid"></div>
+
+<div class="box">
+  <h3>Chat</h3>
+  <div id="chat"></div>
+</div>
+
+<div class="box">
+  <h3>🏆 Leaderboard</h3>
+  <div id="board"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
